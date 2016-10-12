@@ -58,7 +58,7 @@ table {
 body{
     background-color: #282828 ;
     max-width: 960px;
-    min-width: 500px;
+    min-width: 960px;
     margin: 0;
 }
 /*.container{*/
@@ -76,7 +76,49 @@ body{
     background-color: #202020;
     width: 250px;
     height: 800px;
-    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.sidebar-item{
+    position: relative;
+    left: 10px;
+    color: #fff;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.sidebar-item:hover{
+    color: #f39c12;
+    cursor: pointer;
+}
+
+.sidebar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar>p{
+    top: 50px;
+}
+
+.tweet{
+    margin-top: 40px;
+}
+
+.personal-info{
+    margin-top: 120px;
+    line-height: 30px;
+    position: relative;
+    left: 10px;
+}
+
+.social{
+    position: relative;
+    left: 10px;
+    margin-top: 300px;
 }
 
 
@@ -87,7 +129,7 @@ body{
 */
 
 .main-content{
-
+    margin-left: 260px;
 }
 
 
@@ -96,6 +138,7 @@ body{
     font-size: 40px;
     line-height: 25px;
     margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .main-content-title>span{
@@ -105,18 +148,37 @@ body{
 
 .my-intro{
     margin-top: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.introduction{
+    position: relative;
+    left: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.quote{
+    position: relative;
+    top: 50px;
+    color: #f39c12;
+    text-transform: uppercase;
+
 }
 
 .my-pic{
     float: left;
-    border-right: 20px solid transparent;
+    position: relative;
+
+    /*border-right: 20px solid transparent;*/
+    /*border-bottom: 20px solid transparent;*/
+
 
 }
 
-.content{
-   position: relative;
-    left: 50px;
-}
+
 
 
 /*
@@ -127,11 +189,59 @@ body{
 
 
 .skills{
-    margin-top: 80px;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    display-direction: row;
+}
+
+.skills-title{
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .clear{
     clear: both;
+}
+
+
+.core-skills .other-skills{
+    width: 400px;
+}
+
+.other-skills{
+    margin-left: 100px;
+}
+
+.skill-container-html{
+    width: 250px;
+    background-color: #202020;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skill-container-css{
+    width: 250px;
+    background-color: #202020;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skill-container-javascript{
+    width: 250px;
+    background-color: #202020;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.skill-percentage{
+    background-color: #f39c12;
+    width: 450px;
+
+
+
 }
 
 
