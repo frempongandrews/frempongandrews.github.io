@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
     display: block;
 }
 body {
@@ -60,10 +60,18 @@ body{
     max-width: 960px;
     min-width: 960px;
     margin: 0;
+    animation: fadeIn 3s ease;
+
 }
-/*.container{*/
-    /*border: 2px solid black;*/
-/*}*/
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1
+    }
+}
 
 
 /*
@@ -87,12 +95,13 @@ body{
     position: relative;
     left: 10px;
     color: #fff;
-    transition: background-color 0.6s ease-in-out;
+    transition: color 0.6s ease-in-out;
 }
 
 .sidebar-item:hover{
     color: #f39c12;
     cursor: pointer;
+
 }
 
 .sidebar a{
@@ -153,6 +162,53 @@ body{
     color: white;
 }
 
+.my-intro>div{
+    float: left;
+    position: relative;
+    /*border: 3px solid red;*/
+    z-index: 1000;
+    cursor: pointer;
+    perspective: 500px;
+}
+
+.my-pic{
+    position: absolute;
+    transform: rotateY(0deg);
+    border-radius: 7px;
+    transition: transform 1s ease-in-out;
+    backface-visibility: hidden;
+
+
+}
+
+.my-pic-back{
+    height: 184px;
+    width: 125px;
+    border-radius: 7px;
+    /*background-color: white;*/
+    transition: transform 1s ease-in-out;
+    transform: rotateY(180deg);
+    border: 2px solid #202020;;
+
+
+
+}
+
+.my-intro>div:hover .my-pic{
+    transform: rotateY(-180deg);
+
+}
+
+.my-intro>div:hover .my-pic-back{
+    transform: rotateY(0deg);
+}
+
+/*.my-pic:hover>.my-pic-back{*/
+    /*transform: rotateY(180deg) ;*/
+/*}*/
+
+
+
 .introduction{
     position: relative;
     left: 20px;
@@ -168,15 +224,7 @@ body{
 
 }
 
-.my-pic{
-    float: left;
-    position: relative;
 
-    /*border-right: 20px solid transparent;*/
-    /*border-bottom: 20px solid transparent;*/
-
-
-}
 
 
 
@@ -219,6 +267,7 @@ body{
     height: 40px;
     border-radius: 5px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .skill-container-css{
@@ -236,12 +285,15 @@ body{
     border-radius: 5px;
 }
 
-.skill-percentage{
+.skill-percentage-html{
     background-color: #f39c12;
-    width: 450px;
-
-
-
+    width: 220px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
 }
 
 
