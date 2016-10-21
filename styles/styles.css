@@ -58,18 +58,21 @@ table {
 body{
     background-color: #282828 ;
     max-width: 960px;
-    min-width: 960px;
+    min-width: 800px;
     margin: 0;
-    animation: fadeIn 3s ease;
+    animation: fadeIn 2s ease;
+    transform: translateX(0px);
 
 }
 
 @keyframes fadeIn {
     from{
         opacity: 0;
+        transform: translate(-2000px);
     }
     to{
-        opacity: 1
+        opacity: 1;
+        transform: translate(0px);
     }
 }
 
@@ -105,12 +108,15 @@ body{
 }
 
 .sidebar a{
-    color: #fff;
     text-decoration: none;
 }
 
 .sidebar>p{
     top: 50px;
+}
+
+.active-about-me, .active-contact-me{
+    color: #f39c12;
 }
 
 .tweet{
