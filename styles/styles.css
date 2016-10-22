@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,29 +11,36 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 
 /*
   ==========================================================
@@ -53,26 +48,23 @@ table {
   ==========================================================
 */
 
-
-
-body{
-    background-color: #282828 ;
+body {
+    background-color: #282828;
     max-width: 960px;
     min-width: 800px;
     margin: 0;
     animation: fadeIn 2s ease;
     transform: translateX(0px);
-
 }
 
 @keyframes fadeIn {
-    from{
+    from {
         opacity: 0;
-        transform: translate(-2000px);
+        /*transform: translate(-2000px);*/
     }
-    to{
+    to {
         opacity: 1;
-        transform: translate(0px);
+        /*transform: translate(0px);*/
     }
 }
 
@@ -83,7 +75,7 @@ body{
   ==========================================================
 */
 
-.sidebar{
+.sidebar {
     background-color: #202020;
     width: 250px;
     height: 800px;
@@ -91,49 +83,71 @@ body{
     top: 0;
     left: 0;
     font-family: 'Oswald', sans-serif;
-
 }
 
-.sidebar-item{
+.sidebar-item {
     position: relative;
     left: 10px;
     color: #fff;
     transition: color 0.6s ease-in-out;
 }
 
-.sidebar-item:hover{
+.sidebar-item:hover {
     color: #f39c12;
     cursor: pointer;
-
 }
 
-.sidebar a{
+.sidebar a {
     text-decoration: none;
 }
 
-.sidebar>p{
+.sidebar>p {
     top: 50px;
 }
 
-.active-about-me, .active-contact-me{
+.active-about-me, .active-contact-me, .active-portfolio {
     color: #f39c12;
 }
 
-.tweet{
+.tweet {
     margin-top: 40px;
 }
 
-.personal-info{
+.personal-info {
     margin-top: 120px;
     line-height: 30px;
     position: relative;
     left: 10px;
 }
 
-.social{
+.copyright {
+    margin-top: 100px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
     position: relative;
-    left: 10px;
-    margin-top: 300px;
+    left: 20px;
+}
+
+copyright:hover {
+    cursor: auto;
+}
+
+.copyright p>a {
+    /*color: white;*/
+    text-decoration: none;
+    color: #f39c12;
+    transition: color 0.6s ease;
+}
+
+.copyright p>a:hover {
+    cursor: pointer;
+    color: #f39c12;
+}
+
+.fa-heart {
+    color: #f39c12;
 }
 
 
@@ -143,32 +157,32 @@ body{
   ==========================================================
 */
 
-.main-content{
+.main-content {
     margin-left: 260px;
 }
 
-
-.main-content-title{
+.main-content-title {
     color: #f39c12;
     font-size: 40px;
     line-height: 25px;
-    margin-top: 10px;
+    margin-top: 0px;
     font-family: 'Oswald', sans-serif;
+    line-height: 40px;
 }
 
-.main-content-title>span{
+.main-content-title>span {
     color: #fff;
     font-size: 20px;
 }
 
-.my-intro{
+.my-intro {
     margin-top: 20px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
     color: white;
 }
 
-.my-intro>div{
+.my-intro>div {
     float: left;
     position: relative;
     /*border: 3px solid red;*/
@@ -177,62 +191,55 @@ body{
     perspective: 500px;
 }
 
-.my-pic{
+.my-pic {
     position: absolute;
     transform: rotateY(0deg);
     border-radius: 7px;
     transition: transform 1s ease-in-out;
     backface-visibility: hidden;
-
-
 }
 
-.my-pic-back{
+.my-pic-back {
     height: 184px;
     width: 125px;
     border-radius: 7px;
     /*background-color: white;*/
     transition: transform 1s ease-in-out;
     transform: rotateY(180deg);
-    border: 2px solid #202020;;
-
-
-
+    border: 2px solid #202020;
+    ;
 }
 
-.my-intro>div:hover .my-pic{
+.my-intro>div:hover .my-pic {
     transform: rotateY(-180deg);
-
 }
 
-.my-intro>div:hover .my-pic-back{
+.my-intro>div:hover .my-pic-back {
     transform: rotateY(0deg);
 }
 
+
 /*.my-pic:hover>.my-pic-back{*/
-    /*transform: rotateY(180deg) ;*/
+
+
+/*transform: rotateY(180deg) ;*/
+
+
 /*}*/
 
-
-
-.introduction{
+.introduction {
     position: relative;
     left: 20px;
     letter-spacing: 1px;
     line-height: 30px;
 }
 
-.quote{
+.quote {
     position: relative;
     top: 50px;
     color: #f39c12;
     text-transform: uppercase;
-
 }
-
-
-
-
 
 
 /*
@@ -241,34 +248,32 @@ body{
   ==========================================================
 */
 
-
-.skills{
+.skills-container {
     margin-top: 100px;
     color: white;
     display: flex;
     display-direction: row;
 }
 
-.skills-title{
+.skills-title {
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-
-.core-skills .other-skills{
+.core-skills-container .other-skills-container {
     width: 400px;
 }
 
-.other-skills{
+.other-skills-container {
     margin-left: 100px;
 }
 
-.skill-container-html{
-    width: 250px;
+.skill-container-html, .skill-container-css, .skill-container-javascript {
+    width: 260px;
     background-color: #202020;
     height: 40px;
     border-radius: 5px;
@@ -276,22 +281,7 @@ body{
     position: relative;
 }
 
-.skill-container-css{
-    width: 250px;
-    background-color: #202020;
-    height: 40px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.skill-container-javascript{
-    width: 250px;
-    background-color: #202020;
-    height: 40px;
-    border-radius: 5px;
-}
-
-.skill-percentage-html{
+.skill-percentage-html {
     background-color: #f39c12;
     width: 220px;
     height: 36px;
@@ -302,5 +292,19 @@ body{
     left: 2px;
 }
 
+.skill-percentage-html>p {
+    line-height: 35px;
+    width: 150px;
+    margin-left: 10px;
+}
 
+.skill-container-html>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px
+}
 
+.skill-percentage-html ml
