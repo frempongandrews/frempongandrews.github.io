@@ -48,6 +48,10 @@ table {
   ==========================================================
 */
 
+.container{
+    display: flex;
+}
+
 body {
     background-color: #282828;
     max-width: 960px;
@@ -130,8 +134,8 @@ body {
     left: 20px;
 }
 
-copyright:hover {
-    cursor: auto;
+.copyright:hover {
+    .cursor: auto;
 }
 
 .copyright p>a {
