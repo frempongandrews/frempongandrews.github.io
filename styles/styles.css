@@ -50,12 +50,14 @@ table {
 
 .container{
     display: flex;
+    max-width: 1200px;
+    border: 5px solid greenyellow;
+
+
 }
 
 body {
     background-color: #282828;
-    max-width: 960px;
-    min-width: 800px;
     margin: 0;
     animation: fadeIn 2s ease;
     transform: translateX(0px);
@@ -79,14 +81,22 @@ body {
   ==========================================================
 */
 
+.sidebar-container{
+    border: 5px solid red;
+    flex: 0 0 250px;
+    height: 600px;
+    display: flex;
+
+
+}
+
 .sidebar {
     background-color: #202020;
-    width: 250px;
-    height: 800px;
-    position: fixed;
+    /*width: 250px;*/
     top: 0;
     left: 0;
     font-family: 'Oswald', sans-serif;
+    flex-grow: 1;
 }
 
 .sidebar-item {
@@ -162,13 +172,19 @@ body {
 */
 
 .main-content {
-    margin-left: 260px;
+    border: 5px solid deeppink;
+    padding: 0px 30px;
+    /*flex: 1 1 300px;*/
+    width: 1200px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+
 }
 
 .main-content-title {
     color: #f39c12;
     font-size: 40px;
-    line-height: 25px;
     margin-top: 0px;
     font-family: 'Oswald', sans-serif;
     line-height: 40px;
@@ -184,15 +200,15 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
     color: white;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .my-intro>div {
-    float: left;
-    position: relative;
-    /*border: 3px solid red;*/
-    z-index: 1000;
     cursor: pointer;
     perspective: 500px;
+    height: 184px;
 }
 
 .my-pic {
@@ -201,6 +217,7 @@ body {
     border-radius: 7px;
     transition: transform 1s ease-in-out;
     backface-visibility: hidden;
+
 }
 
 .my-pic-back {
@@ -222,14 +239,6 @@ body {
     transform: rotateY(0deg);
 }
 
-
-/*.my-pic:hover>.my-pic-back{*/
-
-
-/*transform: rotateY(180deg) ;*/
-
-
-/*}*/
 
 .introduction {
     position: relative;
@@ -262,10 +271,6 @@ body {
 .skills-title {
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
-}
-
-.clear {
-    clear: both;
 }
 
 .core-skills-container .other-skills-container {
