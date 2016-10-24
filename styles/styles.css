@@ -48,10 +48,15 @@ table {
   ==========================================================
 */
 
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 1px;
+}
+
 .container{
     display: flex;
     max-width: 1200px;
     border: 5px solid greenyellow;
+    font-family: 'Open Sans Condensed', sans-serif;
 
 
 }
@@ -84,6 +89,7 @@ body {
 .sidebar-container{
     border: 5px solid red;
     flex: 0 0 250px;
+    letter-spacing: 1px;
     height: 600px;
     display: flex;
 
@@ -257,7 +263,7 @@ body {
 
 /*
   ==========================================================
-  Skills
+  Skills  TODO: Better organise | no repetition
   ==========================================================
 */
 
@@ -265,12 +271,14 @@ body {
     margin-top: 100px;
     color: white;
     display: flex;
+    letter-spacing: 1px;
     display-direction: row;
 }
 
 .skills-title {
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
+
 }
 
 .core-skills-container .other-skills-container {
@@ -281,7 +289,12 @@ body {
     margin-left: 100px;
 }
 
-.skill-container-html, .skill-container-css, .skill-container-javascript {
+.skill-container-html,
+.skill-container-css,
+.skill-container-javascript,
+.skill-container-photoshop,
+.skill-container-git,
+.skill-container-nodejs{
     width: 260px;
     background-color: #202020;
     height: 40px;
@@ -292,7 +305,8 @@ body {
 
 .skill-percentage-html {
     background-color: #f39c12;
-    width: 220px;
+    font-size: 14px;
+    width: 235px;
     height: 36px;
     border-radius: 5px;
     color: #282828;
@@ -311,9 +325,323 @@ body {
     color: white;
     width: 30px;
     position: absolute;
-    right: -5px;
+    right: -10px;
     top: 15px;
-    font-size: 10px
+    font-size: 10px;
 }
 
-.skill-percentage-html ml
+.skill-percentage-css{
+    background-color: #f39c12;
+    font-size: 14px;
+    width: 220px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.skill-container-css>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+.skill-percentage-css>p {
+    line-height: 35px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+
+.skill-percentage-javascript{
+    background-color: #f39c12;
+    width: 190px;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.skill-container-javascript>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+.skill-percentage-javascript>p {
+    font-size: 14px;
+    line-height: 35px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+
+.skill-percentage-photoshop{
+    background-color: #f39c12;
+    width: 180px;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.skill-container-photoshop>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+.skill-percentage-photoshop>p {
+    line-height: 35px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+
+.skill-percentage-git{
+    background-color: #f39c12;
+    font-size: 14px;
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.skill-container-git>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+.skill-percentage-git>p {
+    line-height: 35px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.skill-percentage-nodejs{
+    background-color: #f39c12;
+    font-size: 14px;
+    width: 180px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.skill-container-nodejs>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+.skill-percentage-nodejs>p {
+    line-height: 35px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.fa-bars{
+    /*opacity: 0;*/
+    display: block;
+    transform: translateX(-200px);
+
+}
+
+
+/*
+  ==========================================================
+  Media Queries ABOUT ME PAGE
+  ==========================================================
+*/
+
+@media screen and (max-width: 800px) {
+    .sidebar-container{
+        display: none;
+    }
+
+    .main-content{
+        margin: 40px 0;
+    }
+
+    .fa-bars{
+        /*opacity: 0;*/
+        display: block;
+        transform: translateX(10px);
+        margin-top: 10px;
+        font-size: 100px;
+        cursor: pointer;
+
+    }
+
+}
+
+
+
+/*
+  ==========================================================
+  PORTFOLIO PAGE
+  ==========================================================
+*/
+
+.portfolio-container{
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    border: 2px solid green;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.portfolio-item{
+    flex: 1 1 30%;
+    border: 2px solid rebeccapurple;
+}
+
+
+
+/*
+  ==========================================================
+  CONTACT PAGE
+  ==========================================================
+*/
+
+
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main h1{
+    margin-bottom: 30px;
+    color: #f39c12;
+    font-size: 40px;
+    margin-top: 0px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 40px;
+}
+
+main h1 span{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+main h1, main h1 span{
+    letter-spacing: 1.2px;
+}
+
+
+main>p {
+    margin-bottom: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border: 2px solid darkgreen;
+    overflow: hidden;
+
+}
+
+form>div{
+    margin-bottom: 10px;
+    position: relative;
+    padding: 5px;
+    height: 20px;
+}
+
+.phone{
+    margin-bottom: -5px;
+}
+
+.your-name{
+    border: 1px solid #202020;
+}
+
+.your-name input, .email input, .phone input{
+    background-color: #202020;
+    border: 1px solid #202020;
+    padding-left: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 14px;
+
+}
+
+.your-name>img{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+form textarea{
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+    border: 2px solid #202020;
+    background-color: #202020;
+    color: white;
+    font-size: 16px;
+}
+
+form>input:nth-last-child(1){
+    width: 100px;
+    background-color: #f39c12;
+    border: 2px solid #f39c12;
+    cursor: pointer;
+
+}
+
+
+
+
