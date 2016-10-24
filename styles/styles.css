@@ -131,6 +131,20 @@ body {
 
 .tweet {
     margin-top: 40px;
+    position: relative;
+    left: -5px;
+}
+
+.tweet h3{
+    padding-left: 30px;
+    position: relative;
+}
+
+.tweet-icon{
+    padding-left: 10px;
+    position: absolute;
+    top: -5px;
+    left: 0px;
 }
 
 .personal-info {
@@ -294,13 +308,25 @@ body {
 .skill-container-javascript,
 .skill-container-photoshop,
 .skill-container-git,
-.skill-container-nodejs{
+.skill-container-nodejs,
+.skill-container-mongodb,
+.skill-container-react{
     width: 260px;
     background-color: #202020;
     height: 40px;
     border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
+}
+
+.skill-percentage-number{
+    line-height: 15px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.skill-text{
+    padding: 10px;
 }
 
 .skill-percentage-html {
@@ -315,11 +341,11 @@ body {
     left: 2px;
 }
 
-.skill-percentage-html>p {
-    line-height: 35px;
-    width: 150px;
-    margin-left: 10px;
-}
+/*.skill-percentage-html>p {*/
+    /*line-height: 35px;*/
+    /*width: 150px;*/
+    /*margin-left: 10px;*/
+/*}*/
 
 .skill-container-html>p {
     color: white;
@@ -351,11 +377,11 @@ body {
     font-size: 10px;
 }
 
-.skill-percentage-css>p {
-    line-height: 35px;
-    width: 150px;
-    margin-left: 10px;
-}
+/*.skill-percentage-css>p {*/
+    /*line-height: 35px;*/
+    /*width: 150px;*/
+    /*margin-left: 10px;*/
+/*}*/
 
 
 .skill-percentage-javascript{
@@ -379,12 +405,12 @@ body {
     font-size: 10px;
 }
 
-.skill-percentage-javascript>p {
-    font-size: 14px;
-    line-height: 35px;
-    width: 150px;
-    margin-left: 10px;
-}
+/*.skill-percentage-javascript>p {*/
+    /*font-size: 14px;*/
+    /*line-height: 35px;*/
+    /*width: 150px;*/
+    /*margin-left: 10px;*/
+/*}*/
 
 
 .skill-percentage-photoshop{
@@ -408,11 +434,11 @@ body {
     font-size: 10px;
 }
 
-.skill-percentage-photoshop>p {
-    line-height: 35px;
-    width: 120px;
-    margin-left: 10px;
-}
+/*.skill-percentage-photoshop>p {*/
+    /*line-height: 35px;*/
+    /*width: 120px;*/
+    /*margin-left: 10px;*/
+/*}*/
 
 
 .skill-percentage-git{
@@ -436,11 +462,12 @@ body {
     font-size: 10px;
 }
 
-.skill-percentage-git>p {
-    line-height: 35px;
-    width: 120px;
-    margin-left: 10px;
-}
+/*.skill-percentage-git>p {*/
+    /*line-height: 35px;*/
+    /*width: 120px;*/
+    /*margin-left: 10px;*/
+/*}*/
+
 
 .skill-percentage-nodejs{
     background-color: #f39c12;
@@ -463,11 +490,81 @@ body {
     font-size: 10px;
 }
 
-.skill-percentage-nodejs>p {
-    line-height: 35px;
-    width: 120px;
-    margin-left: 10px;
+/*.skill-percentage-nodejs>p {*/
+    /*line-height: 35px;*/
+    /*width: 120px;*/
+    /*margin-left: 10px;*/
+/*}*/
+
+
+
+.skill-percentage-mongodb{
+    background-color: #f39c12;
+    font-size: 14px;
+    width: 160px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
 }
+
+.skill-container-mongodb>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+/*.skill-percentage-mongodb>p {*/
+    /*line-height: 35px;*/
+    /*width: 120px;*/
+    /*margin-left: 10px;*/
+/*}*/
+
+
+
+
+
+
+.skill-percentage-react{
+    background-color: #f39c12;
+    font-size: 14px;
+    width: 165px;
+    height: 36px;
+    border-radius: 5px;
+    color: #282828;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.skill-container-react>p {
+    color: white;
+    width: 30px;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    font-size: 10px;
+}
+
+/*.skill-percentage-react>p {*/
+    /*line-height: 35px;*/
+    /*width: 120px;*/
+    /*margin-left: 10px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
 
 
 
