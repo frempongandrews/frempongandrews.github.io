@@ -358,11 +358,32 @@ blockquote{
     line-height: 15px;
     width: 150px;
     margin-left: 10px;
+    opacity: 1;
+    animation: percentageFadeIn 30s ease;
+}
+
+@keyframes percentageFadeIn {
+    from {
+        opacity: 0;
+    }
+
 }
 
 .skill-text{
     padding: 10px;
 }
+
+@keyframes increase{
+    from{
+        width: 0
+    }
+}
+
+.percentage{
+    animation: increase 5s ease;
+
+}
+
 
 .skill-percentage-html {
     background-color: #f39c12;
