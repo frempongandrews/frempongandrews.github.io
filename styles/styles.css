@@ -87,7 +87,7 @@ body {
 */
 
 .sidebar-container{
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     flex: 0 0 250px;
     letter-spacing: 1px;
     height: 600px;
@@ -192,7 +192,7 @@ body {
 */
 
 .main-content {
-    border: 5px solid deeppink;
+    /*border: 5px solid deeppink;*/
     padding: 0px 30px;
     /*flex: 1 1 300px;*/
     width: 1200px;
@@ -622,7 +622,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -681,7 +681,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 45%;
-    border: 2px solid darkgreen;
+    /*border: 2px solid darkgreen;*/
     overflow: hidden;
 
 }
@@ -698,7 +698,7 @@ form>div{
 }
 
 .your-name{
-    border: 1px solid #202020;
+    /*border: 1px solid #202020;*/
 }
 
 .your-name input, .email input, .phone input{
