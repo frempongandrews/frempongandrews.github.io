@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6{
 .container{
     display: flex;
     max-width: 1200px;
-    border: 5px solid greenyellow;
+    /*border: 5px solid greenyellow;*/
     font-family: 'Open Sans Condensed', sans-serif;
 
 
