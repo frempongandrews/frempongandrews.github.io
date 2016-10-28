@@ -218,10 +218,11 @@ body {
 .my-intro {
     margin-top: 20px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     display: flex;
     flex-direction: row;
+
 
 }
 
@@ -248,7 +249,7 @@ body {
     transition: transform 1s ease-in-out;
     transform: rotateY(180deg);
     border: 2px solid #202020;
-    ;
+    font-size: 14px;
 }
 
 .my-intro>div:hover .my-pic {
@@ -264,15 +265,49 @@ body {
     position: relative;
     left: 20px;
     letter-spacing: 1px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.introduction span{
+    color: #f39c12;
 }
 
 .quote {
     position: relative;
-    top: 50px;
+    top: 30px;
     color: #f39c12;
     text-transform: uppercase;
 }
+
+.quote > p{
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+blockquote{
+    font-size: 25px;
+    line-height: 25px;
+    margin-left: 15px;
+    border-left: 10px solid #f39c12;
+    padding-left: 40px;
+    position: relative;
+}
+
+.fa-quote-left{
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    transform: scale(0.7)
+}
+
+.fa-quote-right{
+    position: absolute;
+    bottom: 0px;
+    right: 70px;
+    transform: scale(0.7)
+}
+
 
 
 /*
@@ -340,6 +375,7 @@ body {
     top: 2px;
     left: 2px;
 }
+
 
 /*.skill-percentage-html>p {*/
     /*line-height: 35px;*/
@@ -618,7 +654,10 @@ body {
   ==========================================================
 */
 
+
+
 .portfolio-container{
+    margin-top: 45px;
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
@@ -647,6 +686,7 @@ main{
     margin-top: 5%;
     margin-left: 5%;
     font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
 main h1{
@@ -657,6 +697,8 @@ main h1{
     font-family: 'Oswald', sans-serif;
     line-height: 40px;
 }
+
+
 
 main h1 span{
     color: #ffffff;
@@ -671,10 +713,10 @@ main h1, main h1 span{
 main>p {
     margin-bottom: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     color: white;
     letter-spacing: 1px;
-    line-height: 20px;
+    line-height: 40px;
 }
 
 form{
