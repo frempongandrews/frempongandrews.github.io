@@ -652,12 +652,22 @@ blockquote{
 .portfolio-item{
     border: 2px solid rebeccapurple;
     margin: 10px;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+}
+
+.portfolio-item:hover{
+    transform: scale(1.05);
+    opacity: 1;
+    cursor: pointer;
 }
 
 .portfolio-1{
     background-image: url("../assets/images/todo-app.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: -100px 0px;
+
 
 }
 
@@ -665,6 +675,16 @@ blockquote{
     background-image: url("../assets/images/responsive-portfolio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.portfolio-3{
+    background-image: url("../assets/images/github-proper.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -850,7 +870,6 @@ form>input:nth-last-child(1){
     }
 
     .hamburger{
-
     display: inline-block;
     height: 25px;
     background-color: #f39c12;
@@ -908,13 +927,10 @@ form>input:nth-last-child(1){
     }
 
 
-}
-
-@media screen and (max-width: 1000px) {
-
 
 
 }
+
 
 
 
@@ -930,6 +946,10 @@ form>input:nth-last-child(1){
         flex: 1 1 300px;
         max-width: 300px;
         min-height: 200px;
+    }
+
+    .portfolio-1{
+        background-position: 0px;
     }
 
 }
@@ -948,8 +968,8 @@ form>input:nth-last-child(1){
         /*flex: 1 1 300px;*/
         flex: 1 1 420px;
         max-width: 420px;
-        min-height: 300px;
-        max-height: 350px;
+        min-height: 390px;
+
 
     }
 
