@@ -52,6 +52,8 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 1px;
 }
 
+
+
 .container{
     display: flex;
     max-width: 1200px;
@@ -83,9 +85,14 @@ body {
 
 /*
   ==========================================================
-  Sidebar
+  Sidebar / Navigation
   ==========================================================
 */
+
+.hamburger{
+    /*opacity: 0;*/
+    display: none;
+}
 
 .sidebar-container{
     /*border: 5px solid red;*/
@@ -93,8 +100,7 @@ body {
     letter-spacing: 1px;
     height: 600px;
     display: flex;
-
-
+    margin: 0;
 }
 
 .sidebar {
@@ -192,6 +198,11 @@ body {
   ==========================================================
 */
 
+body{
+    overflow-x: hidden;
+    height: 100vh;
+}
+
 .main-content {
     /*border: 5px solid deeppink;*/
     padding: 0px 30px;
@@ -223,8 +234,6 @@ body {
     color: white;
     display: flex;
     flex-direction: row;
-
-
 }
 
 .my-intro>div {
@@ -237,29 +246,29 @@ body {
     position: absolute;
     transform: rotateY(0deg);
     border-radius: 7px;
-    transition: transform 1s ease-in-out;
-    backface-visibility: hidden;
+    /*transition: transform 1s ease-in-out;*/
+    /*backface-visibility: hidden;*/
 
 }
 
-.my-pic-back {
-    height: 184px;
-    width: 125px;
-    border-radius: 7px;
-    /*background-color: white;*/
-    transition: transform 1s ease-in-out;
-    transform: rotateY(180deg);
-    border: 2px solid #202020;
-    font-size: 14px;
-}
+/*.my-pic-back {*/
+    /*height: 184px;*/
+    /*width: 125px;*/
+    /*border-radius: 7px;*/
+    /*!*background-color: white;*!*/
+    /*transition: transform 1s ease-in-out;*/
+    /*transform: rotateY(180deg);*/
+    /*border: 2px solid #202020;*/
+    /*font-size: 14px;*/
+/*}*/
 
-.my-intro>div:hover .my-pic {
-    transform: rotateY(-180deg);
-}
+/*.my-intro>div:hover .my-pic {*/
+    /*transform: rotateY(-180deg);*/
+/*}*/
 
-.my-intro>div:hover .my-pic-back {
-    transform: rotateY(0deg);
-}
+/*.my-intro>div:hover .my-pic-back {*/
+    /*transform: rotateY(0deg);*/
+/*}*/
 
 
 .introduction {
@@ -275,8 +284,9 @@ body {
 }
 
 .quote {
-    position: relative;
-    top: 30px;
+    /*position: relative;*/
+    /*top: 30px;*/
+    margin-top: 30px;
     color: #f39c12;
     text-transform: uppercase;
 }
@@ -616,60 +626,6 @@ blockquote{
 /*}*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fa-bars{
-    /*opacity: 0;*/
-    display: block;
-    transform: translateX(-200px);
-
-}
-
-
-/*
-  ==========================================================
-  Media Queries ABOUT ME PAGE
-  ==========================================================
-*/
-
-@media screen and (max-width: 800px) {
-    .sidebar-container{
-        display: none;
-    }
-
-    .main-content{
-        margin: 40px 0;
-    }
-
-    .fa-bars{
-        /*opacity: 0;*/
-        display: block;
-        transform: translateX(10px);
-        margin-top: 10px;
-        font-size: 100px;
-        cursor: pointer;
-
-    }
-
-}
-
-
-
 /*
   ==========================================================
   PORTFOLIO PAGE
@@ -681,15 +637,20 @@ blockquote{
 .portfolio-container{
     margin-top: 45px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     flex-grow: 1;
     /*border: 2px solid green;*/
     font-family: 'Open Sans Condensed', sans-serif;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    margin-left: 80px;
+
 }
 
 .portfolio-item{
-    flex: 1 1 30%;
+    flex: 1 1 250px;
     border: 2px solid rebeccapurple;
+    margin: 10px;
 }
 
 
@@ -804,6 +765,138 @@ form>input:nth-last-child(1){
     cursor: pointer;
 
 }
+
+
+
+
+/*
+  ==========================================================
+  Media queries
+  ==========================================================
+*/
+
+@media screen and (max-width: 600px) {
+    .my-pic{
+        position: relative;
+        left: 30%;
+    }
+
+    .my-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .other-skills-container{
+        margin: 50px auto;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .introduction{
+        padding-right: 30px;
+    }
+
+    .sidebar-container{
+    display: none;
+    }
+
+    .my-intro{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-right: 80px;
+        margin-left: -40px;
+    }
+    .my-pic{
+        position: relative;
+    }
+
+    .hamburger{
+
+    display: inline-block;
+    height: 25px;
+    background-color: #f39c12;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #f39c12;
+    }
+
+    .main-content-title{
+        margin-top: 10px;
+    }
+
+    .quote{
+        margin-left: -60px;
+        margin-right: 90px;
+        padding: 0px;
+    }
+
+    .fa-quote-right{
+        position: relative;
+        left: 10px;
+    }
+    .skills-container{
+        position: relative;
+        left: -50px;
+    }
+
+    .other-skills-container, .core-skills-container{
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .sidebar-container{
+        flex: 0 0 200px;
+    }
+    .other-skills-container, .core-skills-container{
+        margin-left: 10px;
+    }
+
+    .my-pic {
+        position: relative;
+        border-radius: 7px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .portfolio-item {
+        flex: 0 0 277px;
+        height: 283px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .other-skills-container{
+        margin-left: 100px;
+    }
+}
+
+
+/*----------------portfolio page-------------------*/
+@media screen and (min-width: 1100px) {
+    .portfolio-item {
+        flex: 0 1 377px;
+        height: 304px;
+    }
+}
+
 
 
 
