@@ -234,6 +234,7 @@ body{
     color: white;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .my-intro>div {
@@ -243,8 +244,6 @@ body{
 }
 
 .my-pic {
-    position: absolute;
-    transform: rotateY(0deg);
     border-radius: 7px;
     /*transition: transform 1s ease-in-out;*/
     /*backface-visibility: hidden;*/
@@ -644,15 +643,29 @@ blockquote{
     /*margin-right: 20px;*/
     flex-wrap: wrap;
     margin-left: 80px;
+    max-width: 750px;
     padding: 20px;
     justify-content: center;
 
 }
 
 .portfolio-item{
-    flex: 1 1 250px;
     border: 2px solid rebeccapurple;
     margin: 10px;
+}
+
+.portfolio-1{
+    background-image: url("../assets/images/todo-app.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.portfolio-2{
+    background-image: url("../assets/images/responsive-portfolio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
@@ -894,45 +907,53 @@ form>input:nth-last-child(1){
         border-radius: 7px;
     }
 
-    .portfolio-container{
-        max-width: 750px;
-        height: 500px;
-
-    }
-
-    .portfolio-item{
-        flex: 1 1 200px;
-        max-height: 200px;
-    }
-
 
 }
 
 @media screen and (max-width: 1000px) {
-    .portfolio-container{
 
-        max-width: 750px;
-        height: 500px;
 
-    }
 
-    .portfolio-item{
-        flex: 1 1 200px;
-        max-height: 200px;
-    }
 }
 
 
 
 /*----------------portfolio page-------------------*/
-@media screen and (min-width: 1180px) {
+@media screen and (max-width: 1100px) {
+
     .portfolio-container{
         max-width: 750px;
+        height: 500px;
     }
 
     .portfolio-item{
+        flex: 1 1 300px;
+        max-width: 300px;
+        min-height: 200px;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    .portfolio-container{
+        max-width: 950px;
+        margin-left: 0;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .portfolio-item{
+        /*flex: 1 1 300px;*/
+        flex: 1 1 420px;
+        max-width: 420px;
+        min-height: 300px;
+        max-height: 350px;
 
     }
+
+
 }
 
 
