@@ -641,9 +641,11 @@ blockquote{
     flex-grow: 1;
     /*border: 2px solid green;*/
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     flex-wrap: wrap;
     margin-left: 80px;
+    padding: 20px;
+    justify-content: center;
 
 }
 
@@ -790,8 +792,6 @@ form>input:nth-last-child(1){
 
     }
 
-
-
     .skills-container{
         display: flex;
         flex-direction: column;
@@ -799,6 +799,17 @@ form>input:nth-last-child(1){
 
     .other-skills-container{
         margin: 50px auto;
+    }
+
+    .portfolio-item{
+        min-width: 240px;
+        min-height: 200px;
+    }
+
+    .portfolio-container{
+        margin-left: 0px;
+        justify-content: center;
+
     }
 
 
@@ -859,9 +870,18 @@ form>input:nth-last-child(1){
         margin-left: 10px;
     }
 
+    .portfolio-item{
+        min-width: 230px;
+        max-width: 323.68px;
+        min-height: 200px;
+    }
+
 }
 
-@media screen and (min-width: 800px) {
+
+
+
+@media screen and (max-width: 900px) {
     .sidebar-container{
         flex: 0 0 200px;
     }
@@ -873,29 +893,45 @@ form>input:nth-last-child(1){
         position: relative;
         border-radius: 7px;
     }
+
+    .portfolio-container{
+        max-width: 750px;
+        height: 500px;
+
+    }
+
+    .portfolio-item{
+        flex: 1 1 200px;
+        max-height: 200px;
+    }
+
+
 }
 
+@media screen and (max-width: 1000px) {
+    .portfolio-container{
 
-@media screen and (max-width: 900px) {
-    .portfolio-item {
-        flex: 0 0 300px;
-        height: 300px;
+        max-width: 750px;
+        height: 500px;
+
+    }
+
+    .portfolio-item{
+        flex: 1 1 200px;
+        max-height: 200px;
     }
 }
 
-
-@media screen and (min-width: 900px) {
-    .other-skills-container{
-        margin-left: 100px;
-    }
-}
 
 
 /*----------------portfolio page-------------------*/
-@media screen and (min-width: 1100px) {
-    .portfolio-item {
-        flex: 0 1 377px;
-        height: auto;
+@media screen and (min-width: 1180px) {
+    .portfolio-container{
+        max-width: 750px;
+    }
+
+    .portfolio-item{
+
     }
 }
 
