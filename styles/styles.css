@@ -147,6 +147,11 @@ body {
     position: relative;
 }
 
+.tweet h3 a{
+    color: white;
+    text-decoration: none;
+}
+
 .tweet-icon{
     padding-left: 10px;
     position: absolute;
