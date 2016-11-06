@@ -915,10 +915,10 @@ form>input:nth-last-child(1){
 
 @media screen and (max-width: 900px) {
     .sidebar-container{
-        flex: 0 0 200px;
+        flex: 0 1 200px;
     }
     .other-skills-container, .core-skills-container{
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .my-pic {
@@ -926,9 +926,18 @@ form>input:nth-last-child(1){
         border-radius: 7px;
     }
 
+    .portfolio-container{
+        max-width: 850px;
+        height: 500px;
+        margin: 0px;
+        padding: 0px;
+    }
 
-
-
+    /*.portfolio-item{*/
+        /*flex: 1 1 280px;*/
+        /*max-width: 280px;*/
+        /*min-height: 200px;*/
+    /*}*/
 }
 
 
@@ -940,12 +949,15 @@ form>input:nth-last-child(1){
     .portfolio-container{
         max-width: 750px;
         height: 500px;
+        margin-left: 0px;
+        padding: 0px;
     }
 
     .portfolio-item{
         flex: 1 1 300px;
         max-width: 300px;
         min-height: 200px;
+
     }
 
     .portfolio-1{
@@ -966,11 +978,9 @@ form>input:nth-last-child(1){
 
     .portfolio-item{
         /*flex: 1 1 300px;*/
-        flex: 1 1 420px;
-        max-width: 420px;
+        flex: 1 1 410px;
+        max-width: 410px;
         min-height: 390px;
-
-
     }
 
 

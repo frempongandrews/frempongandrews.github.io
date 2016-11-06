@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9221a9d6-1648-4720-bee3-b87f8d702799" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/github-proper.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/responsive-portfolio.jpg" afterPath="$PROJECT_DIR$/assets/images/responsive-portfolio.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/portfolio.html" afterPath="$PROJECT_DIR$/pages/portfolio.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/styles.css" afterPath="$PROJECT_DIR$/styles/styles.css" />
     </list>
     <ignored path="myCvWebsite.iws" />
@@ -74,8 +71,8 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
-                  <caret line="656" column="1" selection-start-line="656" selection-start-column="1" selection-end-line="656" selection-end-column="1" />
+                <state relative-caret-position="322">
+                  <caret line="935" column="0" selection-start-line="935" selection-start-column="0" selection-end-line="939" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -305,16 +302,16 @@
       <workItem from="1477287048654" duration="15952000" />
       <workItem from="1477664404813" duration="8170000" />
       <workItem from="1477826671316" duration="2859000" />
-      <workItem from="1478104516891" duration="27039000" />
+      <workItem from="1478104516891" duration="28547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97597000" />
+    <option name="totallyTimeSpent" value="99105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="153" y="-1057" width="1498" height="1055" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21597834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -621,14 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="656" column="1" selection-start-line="656" selection-start-column="1" selection-end-line="656" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -636,6 +625,14 @@
           <folding>
             <element signature="e#536#543#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="935" column="0" selection-start-line="935" selection-start-column="0" selection-end-line="939" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
