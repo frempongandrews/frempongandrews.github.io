@@ -1,0 +1,577 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+  ==========================================================
+  End of reset
+  ==========================================================
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: #777;
+    font-family: "AlverataW01-PELt", Arial, sans-serif;
+}
+
+body {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #e46965;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+/*
+  ==========================================================
+  main navigation
+  ==========================================================
+*/
+
+.hamburger-menu-icon{
+    display: none;
+    width: 28px;
+    height: 28px;
+    background: url("../images/menu-icon.png");
+}
+
+nav {
+    background-color: #dadada;
+    /*setting height parent*/
+    height: 40px;
+}
+
+.nav-list, .social-list {
+    list-style: none;
+}
+
+.nav-list {
+    float: left;
+}
+
+.nav-list li, .social-list li {
+    float: left;
+
+}
+
+.nav-list li {
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-list li a:hover {
+    color: #e46965;
+
+}
+
+/*.nav-list{*/
+/*padding-top: 10px;*/
+/*}*/
+
+.social-list {
+    float: right;
+    margin-top: 5px;
+}
+
+.social-list li {
+    margin-left: 20px;
+}
+
+/*
+  ==========================================================
+ Header / site title
+  ==========================================================
+*/
+
+header {
+    line-height: 10px;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 42px;
+
+}
+
+header h3 {
+    color: #e46965;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/*
+  ==========================================================
+ Feature
+  ==========================================================
+*/
+
+.feature {
+    background-color: #363636;
+}
+
+.feature-list {
+    background: url("../images/feature-bg.jpg") top center no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+.feature-list li {
+    display: inline-block;
+    width: 33%;
+    padding-top: 130px;
+    height: 300px;
+    border-right: 1px solid white;
+}
+
+.feature-list li a {
+    text-decoration: none;
+}
+
+.feature-list li a img {
+    margin-bottom: 0px;
+}
+
+.feature-list li a h3 {
+    /*making it clickable wherever in between the 2 elements*/
+    margin-top: 0;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.55;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.feature-list li a:hover .feature-title {
+    opacity: 1;
+}
+
+.feature-list li:first-child {
+    border-left: 1px solid white;
+}
+
+.body-text > p {
+    line-height: 18px;
+}
+
+/*
+  ==========================================================
+  Portfolio
+  ==========================================================
+*/
+
+.portfolio-samples {
+    background-color: #dadada;
+    /*height: 300px;*/
+}
+
+.portfolio-samples > .container > h2 {
+    padding-top: 10px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    padding-bottom: 10px;
+}
+
+.portfolio-list li {
+    height: 210px;
+    flex: 0 0 210px;
+    position: relative;
+}
+
+.portfolio-list li:last-child {
+    margin-right: 0px;
+}
+
+.port-laptops {
+    background: url("../images/laptops.jpg") center center no-repeat;
+}
+
+.port-acme {
+    background: url("../images/acme-logo.jpg") -233px -60px no-repeat;
+}
+
+.port-demoreel {
+    background: url("../images/tablet.jpg") center center no-repeat;
+}
+
+.port-logo {
+    background: url("../images/a-logo.jpg") -340px -153px no-repeat;
+}
+
+.caption {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+.caption a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+
+}
+
+.caption img {
+    position: absolute;
+    right: 5px;
+}
+
+/*
+  ==========================================================
+  Footer
+  ==========================================================
+*/
+
+footer {
+    background-color: #252525;
+
+}
+
+.footer-title {
+    color: #e46965;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.col-one-third {
+    height: 315px;
+}
+
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.col-one-third {
+    align-items: flex-start;
+}
+
+.blog-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.blog-date {
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.address-container > p {
+    margin-bottom: 15px;
+}
+
+.address-container, .blog-container, .address-container a {
+    color: #848484;
+}
+
+.address-container a {
+    text-decoration: none;
+}
+
+.address-container > p:nth-child(3) {
+    margin-top: -10px;
+}
+
+.form-container > form > input {
+    margin: 10px 0px;
+    height: 40px;
+    width: 300px;
+    text-indent: 10px;
+    font-size: 14px;
+}
+
+.form-container > form > input:focus {
+    outline-color: #e46965;
+}
+
+.form-container > form > input:first-child {
+    margin-top: 0px;
+}
+
+.form-container > form > input:last-child {
+    outline: none;
+    background-color: #e46965;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.form-container > form > input:last-child:hover {
+    cursor: pointer;
+    background-color: #e0544f;
+}
+
+.copyright {
+    text-align: center;
+    height: 40px;
+    color: #414141;
+    background-color: #0e0e0e;
+    line-height: 40px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*
+  ==========================================================
+  Media Queries
+  ==========================================================
+*/
+
+/*   @ max 899px*/
+
+@media screen and (max-width: 899px) {
+
+    /*----------navigation section----------*/
+
+    .container {
+        padding: 0 10px
+    }
+
+    /*----------feature section----------*/
+    .feature-list {
+        padding: 0px;
+        margin: 0 10px;
+        background: none;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+
+    }
+
+    .feature-list li {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid white;
+        background-image: url("../images/feature-bg.jpg");
+        background-attachment: local;
+        height: 100%;
+    }
+
+    .feature-web{
+        background-position: top left;
+        border-left: none;
+    }
+
+    .feature-graphic{
+        background-position: bottom center ;
+    }
+
+    .feature-video{
+        background-position: center right;
+
+    }
+
+
+    .feature-list li:last-child{
+        border-bottom: none;
+    }
+
+
+    .feature-list li:nth-child(2){
+
+    }
+
+    .feature-list li > a {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10%;
+
+    }
+
+    .feature-list li > a h3 {
+        padding-left: 20px;
+        position: relative;
+        bottom: 40px;
+
+    }
+
+    .feature-list li > a img{
+        position: relative;
+        bottom: 50px;
+    }
+
+    /*--------- portfolio section ------------*/
+    .portfolio-list {
+        width: 100%;
+    }
+
+    .portfolio-list li {
+
+        flex: 1 1 25%;
+    }
+
+}
+
+
+
+
+/*at max 640px*/
+
+/*nav hamburger*/
+
+/*info-blog section vertical*/
+
+/*
+  ==========================================================
+  @ max 640px
+  ==========================================================
+*/
+
+@media screen and (max-width: 680px) {
+
+    /*--------------navigation section-------------------*/
+
+    .hamburger-menu-icon{
+        display: inline-block;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .nav-list{
+        display: none;
+        position: absolute;
+        background-color: #111;
+        top: 40px;
+        left: 0;
+        padding: 20px;
+        height: 30vh;
+        width: 30vw;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .nav-list>li{
+        display: block;
+        float: none;
+        padding: 20px;
+    }
+
+
+    /*--------------portfolio section-------------------*/
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .port-logo{
+        background-position: -200px -150px;
+    }
+
+
+    /*--------------blog/info section-------------------*/
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .container .col-one-third{
+        text-align: center;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .copyright{
+        font-size: 11px;
+    }
+
+}
+
+
+@media screen and (min-width: 679px) {
+    .nav-list {
+        display: block !important;
+    }
+}
