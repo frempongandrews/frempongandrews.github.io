@@ -167,7 +167,7 @@ header h1 {
 
 header h3 {
     color: #e46965;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -567,11 +567,21 @@ footer > .container {
         font-size: 11px;
     }
 
+    header h3{
+        font-size: 16px;
+        font-weight: 300;
+    }
+
 }
 
 
 @media screen and (min-width: 679px) {
     .nav-list {
         display: block !important;
+    }
+
+    header h3{
+        font-size: 16px;
+        font-weight: 300;
     }
 }
