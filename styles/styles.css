@@ -748,6 +748,13 @@ blockquote{
 
 }
 
+.portfolio-4{
+    background-image: url("../assets/images/artist-site.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -30px 0px;
+}
+
 
 
 /*

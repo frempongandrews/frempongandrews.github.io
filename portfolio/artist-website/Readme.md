@@ -1,0 +1,1 @@
+A website for an artist.
