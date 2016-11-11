@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9221a9d6-1648-4720-bee3-b87f8d702799" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/artist-site.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/buy-it-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/grey-diamond.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/meek-mill-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/meek-mill-pic-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/meek-mill-pic-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/meek-mill-pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/pink-diamond.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/search-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/assets/uk-flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/scripts/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/artist-website/styles/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/portfolio.html" afterPath="$PROJECT_DIR$/pages/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/styles.css" afterPath="$PROJECT_DIR$/styles/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/artist-website/index.html" afterPath="$PROJECT_DIR$/portfolio/artist-website/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/artist-website/styles/styles.css" afterPath="$PROJECT_DIR$/portfolio/artist-website/styles/styles.css" />
     </list>
     <ignored path="myCvWebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+                <state relative-caret-position="1314">
+                  <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
                   <folding>
                     <element signature="e#1345#1351#0" expanded="true" />
                     <element signature="e#1669#1676#1" expanded="true" />
@@ -70,10 +56,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/portfolio.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1674">
+                <state relative-caret-position="2070">
                   <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
                   <folding>
                     <element signature="e#1330#1336#0" expanded="true" />
@@ -89,8 +75,8 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="753" column="33" selection-start-line="753" selection-start-column="33" selection-end-line="753" selection-end-column="33" />
+                <state relative-caret-position="500">
+                  <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -127,9 +113,9 @@
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/pages/contact.html" />
         <option value="$PROJECT_DIR$/portfolio/portfolio-template/styles/styles.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/portfolio.html" />
         <option value="$PROJECT_DIR$/styles/styles.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -200,6 +186,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="personalWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="personalWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="personalWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="personalWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artist-website" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,13 +333,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126935000" />
+    <option name="totallyTimeSpent" value="128750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-262" y="-1057" width="1676" height="1027" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15528701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15528701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -797,21 +815,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-          <folding>
-            <element signature="e#1345#1351#0" expanded="true" />
-            <element signature="e#1669#1676#1" expanded="true" />
-            <element signature="e#2826#2832#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
+        <state relative-caret-position="2070">
           <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
           <folding>
             <element signature="e#1330#1336#0" expanded="true" />
@@ -821,9 +827,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="753" column="33" selection-start-line="753" selection-start-column="33" selection-end-line="753" selection-end-column="33" />
+        <state relative-caret-position="500">
+          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+          <folding>
+            <element signature="e#1345#1351#0" expanded="true" />
+            <element signature="e#1669#1676#1" expanded="true" />
+            <element signature="e#2826#2832#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
