@@ -56,6 +56,7 @@ h1, h2, h3, h4, h5, h6{
 
 .container{
     display: flex;
+    display: -webkit-flex;
     max-width: 1200px;
     /*border: 5px solid greenyellow;*/
     height: calc(100vh - 100px);
@@ -69,6 +70,8 @@ body {
     margin: 0;
     animation: fadeIn 2s ease;
     transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+
 }
 
 @keyframes fadeIn {
@@ -97,9 +100,11 @@ body {
 .sidebar-container{
     /*border: 5px solid red;*/
     flex: 0 0 250px;
+    -webkit-flex: 0 0 250px;
     letter-spacing: 1px;
     height: 600px;
     display: flex;
+    display: -webkit-flex;
     margin: 0;
 }
 
@@ -110,6 +115,7 @@ body {
     left: 0;
     font-family: 'Oswald', sans-serif;
     flex-grow: 1;
+    -webkit-flex-grow: 1;
 }
 
 .sidebar-item {
@@ -202,6 +208,7 @@ body {
 .main-menu-small{
     /*display: none;*/
     transform: translateX(-100vw);
+    -webkit-transform: translateX(-100vw);
     background-color: #0e0e0e;
     z-index: 10;
     position: fixed;
@@ -248,7 +255,9 @@ body{
     width: 1200px;
     height: calc(100vh - 100px);
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
 
 }
 
@@ -271,8 +280,12 @@ body{
     font-size: 14px;
     color: white;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
+
 }
 
 .my-intro>div {
@@ -353,7 +366,8 @@ blockquote{
     position: absolute;
     bottom: 0px;
     right: 70px;
-    transform: scale(0.7)
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
 }
 
 
@@ -368,8 +382,10 @@ blockquote{
     margin-top: 100px;
     color: white;
     display: flex;
+    display: -webkit-flex;
     letter-spacing: 1px;
     display-direction: row;
+    -webkit-flex-direction: row;
 }
 
 .skills-title {
@@ -408,6 +424,7 @@ blockquote{
     margin-left: 10px;
     opacity: 1;
     animation: percentageFadeIn 30s ease;
+    -webkit-animation: percentageFadeIn 30s ease;
 }
 
 @keyframes percentageFadeIn {
@@ -417,18 +434,31 @@ blockquote{
 
 }
 
+@-webkit-keyframes percentageFadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
 .skill-text{
     padding: 10px;
 }
 
 @keyframes increase{
     from{
-        width: 0
+        width: 0;
+    }
+}
+
+@-webkit-keyframes increase {
+    from {
+        width: 0;
     }
 }
 
 .percentage{
     animation: increase 5s ease;
+    -webkit-animation: increase 5s ease;
 
 }
 
@@ -674,12 +704,16 @@ blockquote{
 .portfolio-container{
     margin-top: 45px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     flex-grow: 1;
+    -webkit-flex-grow: 1;
     /*border: 2px solid green;*/
     font-family: 'Open Sans Condensed', sans-serif;
     /*margin-right: 20px;*/
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin-left: 80px;
     max-width: 750px;
     padding: 20px;
@@ -766,8 +800,11 @@ blockquote{
 
 main{
     display: flex;
+    display: -webkit-flex;
     flex-grow: 1;
+    -webkit-flex-grow: 1;
     flex-direction: column;
+    -webkit-flex-direction: column;
     margin-top: 5%;
     margin-left: 5%;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -806,7 +843,9 @@ main>p {
 
 form{
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     width: 45%;
     /*border: 2px solid darkgreen;*/
     overflow: hidden;
@@ -885,8 +924,11 @@ form>input:nth-last-child(1){
 
     .my-intro{
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
+        -webkit-flex-direction: column;
         justify-content: center;
+        -webkit-justify-content: center;
         margin-right: 0px;
         margin-left: 0px;
 
@@ -894,7 +936,9 @@ form>input:nth-last-child(1){
 
     .skills-container{
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
 
     .other-skills-container{
@@ -909,6 +953,7 @@ form>input:nth-last-child(1){
     .portfolio-container{
         margin-left: 0px;
         justify-content: center;
+        -webkit-justify-content: center;
 
     }
 
@@ -927,7 +972,9 @@ form>input:nth-last-child(1){
 
     .my-intro{
         display: flex;
+        display: -webkit-flex;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
         padding: 10px;
         margin-right: 80px;
         margin-left: -40px;
@@ -977,6 +1024,7 @@ form>input:nth-last-child(1){
 
     .main-menu-small{
         /*display: block;*/
+
     }
 
 }
@@ -987,6 +1035,7 @@ form>input:nth-last-child(1){
 @media screen and (max-width: 900px) {
     .sidebar-container{
         flex: 0 1 200px;
+        -webkit-flex: 0 1 200px;
     }
     .other-skills-container, .core-skills-container{
         margin-left: 0px;
@@ -1026,6 +1075,7 @@ form>input:nth-last-child(1){
 
     .portfolio-item{
         flex: 1 1 300px;
+        -webkit-flex: 1 1 300px;
         max-width: 300px;
         min-height: 200px;
 
@@ -1044,12 +1094,14 @@ form>input:nth-last-child(1){
         max-width: 950px;
         margin-left: 0;
         justify-content: flex-start;
+        -webkit-justify-content: flex-start;
         padding: 0;
     }
 
     .portfolio-item{
         /*flex: 1 1 300px;*/
         flex: 1 1 410px;
+        -webkit-flex: 1 1 410px;
         max-width: 410px;
         min-height: 390px;
     }
