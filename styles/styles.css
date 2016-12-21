@@ -398,13 +398,19 @@ blockquote {
 .skill-container-git,
 .skill-container-nodejs,
 .skill-container-mongodb,
-.skill-container-react {
+.skill-container-react,
+.skill-container-wordpress
+{
     width: 260px;
     background-color: #202020;
     height: 40px;
     border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
+}
+
+.skill-percentage-wordpress p{
+    font-size: 12px;
 }
 
 .skill-percentage-number {
@@ -641,7 +647,7 @@ blockquote {
 /*margin-left: 10px;*/
 /*}*/
 
-.skill-percentage-react {
+.skill-percentage-react, .skill-percentage-wordpress  {
     background-color: #f39c12;
     font-size: 14px;
     width: 160px;
@@ -729,10 +735,10 @@ blockquote {
 }
 
 .portfolio-1 {
-    background-image: url("../assets/images/todo-app.jpg");
+    background-image: url("../assets/images/jsTodo.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -100px 0px;
+
 
 }
 
@@ -763,7 +769,7 @@ blockquote {
 }
 
 .portfolio-6 {
-    background-image: url("../assets/images/imagegif.gif");
+    background-image: url("../assets/images/bmi.gif");
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -776,6 +782,15 @@ blockquote {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -30px 0px;
+}
+
+.portfolio-overlay{
+    font-size: 14px;
+    text-align: left;
+}
+
+.portfolio-overlay p{
+    padding: 0 10px;
 }
 
 /*
@@ -937,6 +952,9 @@ form > input:nth-last-child(1) {
 
     }
 
+    .portfolio-overlay{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1031,6 +1049,8 @@ form > input:nth-last-child(1) {
         margin: 0px;
         padding: 0px;
     }
+
+
 
     /*.portfolio-item{*/
     /*flex: 1 1 280px;*/
